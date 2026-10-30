@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "如需引用本开源成果包，请使用以下元数据。"
+title: "循证演化：自进化智能体的发布门禁"
+abstract: >-
+  面向自进化智能体与提示词/工件迭代的开源评测与发布治理工具：证据绑定的候选、
+  两级门禁（探索筛查 / 发布）、事务发布与祖先回滚、SHA-256 决策凭证链，
+  以及可接 OpenAI 兼容端点的在线自进化闭环（并发、预算、断点续跑）。
+message-type: software
+type: software
+version: 1.2.0
+date-released: "2026-10-29"
+license: MIT
+authors:
+  - name: "2026 循证演化 Team"
+keywords:
+  - self-evolving agents
+  - release gate
+  - evaluation harness
+  - prompt optimization
+  - reproducibility
+  - decision receipt
+identifiers:
+  - type: other
+    value: "evidence-evolve-1.2.0"
+    description: "开源成果包版本号"
+preferred-citation:
+  type: software
+  title: "循证演化：自进化智能体的发布门禁（v1.2.0）"
+  year: 2026
+  version: 1.2.0
+  authors:
+    - name: "2026 循证演化 Team"
+  license: MIT

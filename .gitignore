@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# 本机工具状态（如 mimosa hook 基线）不应提交
+.mimosa/
+
+# 测试与缓存
+.pytest_cache/
+.cache/
+.coverage
+htmlcov/
+
+# 本地状态与演示输出（含 SQLite 与工件，不应提交）
+demo-output*/
+state/
+*.sqlite3
+!tests/fixtures/*.sqlite3
+
+# 本地原始账本（含第三方语料片段，不随仓库分发）
+runs/*/api_calls.jsonl
+runs/*/rollouts.jsonl
+runs/*/*_comparison.json
+data/splits.json
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

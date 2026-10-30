@@ -1,0 +1,19 @@
+# 核心包（harness/CLI/凭证）无第三方运行依赖。
+-e .
+
+# 注意顺序：必须先安装本仓库内的 GEPA，再安装 research 依赖。
+# PyPI 的 gepa 0.1.4 虽然版本号相同，但缺少 `best_score`，会导致测试 32 passed / 1 failed。
+./upstream/gepa
+dspy==3.4.1
+bm25s==0.2.12
+PyStemmer==3.1.0
+
+# 历史实验（runs/）复现所需的间接依赖；离线演示与门禁回放不需要联网调用。
+datasets==5.1.0
+openai==2.54.0
+requests==2.34.2
+psutil==7.2.2
+cloudpickle==3.1.2
+numpy==2.5.4
+scipy==1.18.1
+pyarrow==26.0.0
