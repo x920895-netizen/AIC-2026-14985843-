@@ -1,0 +1,63 @@
+{
+  "experiment": "R1",
+  "title": "HotpotQA-Mini 首轮真实 API 优化（GEPA 基线）",
+  "source": "runs/round1/summary.json",
+  "desensitized": true,
+  "note": "只保留计数、指标与成本，不含问题文本、原始回答、账号或密钥。",
+  "dataset": {
+    "name": "HotpotQA-Mini",
+    "split": "独立测试",
+    "n": 30,
+    "seed": 1,
+    "model": "qwen3.8-flash",
+    "reflection_model": "qwen3.8-max-0902"
+  },
+  "paired": {
+    "baseline_correct": 19,
+    "candidate_correct": 23,
+    "fixed": 4,
+    "regressed": 0
+  },
+  "metrics": {
+    "baseline_em": 0.6333333333333333,
+    "candidate_em": 0.7666666666666667,
+    "baseline_f1": 0.7022988505747126,
+    "candidate_f1": 0.8214814814814815
+  },
+  "cost": {
+    "kind": "api_cost_cny_from_test_phase",
+    "baseline_cny": 0.1591197,
+    "candidate_cny": 0.2621799,
+    "ratio": 1.6476897580877794
+  },
+  "latency": {
+    "baseline_seconds_per_task": 21.40836666666437,
+    "candidate_seconds_per_task": 29.05466666666713
+  },
+  "statistics": {
+    "bootstrap": {
+      "method": "paired_bootstrap_percentile",
+      "seed": 1,
+      "resamples": 2000,
+      "lower_index": 49,
+      "upper_index": 1949,
+      "lower": 0.03333333333333333,
+      "upper": 0.26666666666666666
+    },
+    "mcnemar_exact_p_two_sided": 0.125
+  },
+  "run_totals": {
+    "metric_calls": 462,
+    "num_candidates": 9,
+    "api_calls": 2526,
+    "total_cost_cny": 9.985033100000003,
+    "process_seconds": 842.375
+  },
+  "limitations": [
+    "单次随机划分，每组独立测试仅30题",
+    "任务模型与论文Qwen3-8B不同",
+    "模型费用根据官方原价和API用量估算，实际账单可能受缓存与免费额度影响",
+    "任务模型采用非思考模式，四个DSPy模块仍生成reasoning字段",
+    "当前任务模型ID未提供固定快照映射"
+  ]
+}

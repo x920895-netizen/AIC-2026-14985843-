@@ -1,0 +1,149 @@
+{
+  "mode": "simulation",
+  "fixture": "synthetic",
+  "api_calls": 0,
+  "actual_api_cost_cny": 0,
+  "automated_candidate_generation": false,
+  "events": [
+    {
+      "event": "初始化",
+      "version": "version-8ba7ea4dd3bb4b47841ce49e03ab7e17",
+      "mode": "simulation",
+      "api_calls": 0
+    },
+    {
+      "event": "独立验证通过，当前版本尚未切换",
+      "passed": true,
+      "metrics": {
+        "parent_em": 0.0,
+        "candidate_em": 1.0,
+        "delta_em": 1.0,
+        "delta_f1": 1.0,
+        "regression_rate": null,
+        "regression_count": 0,
+        "interval": [
+          1.0,
+          1.0
+        ],
+        "per_task": [
+          {
+            "task_id": "demo-0",
+            "repeat": 1,
+            "parent_em": 0.0,
+            "candidate_em": 1.0,
+            "parent_f1": 0.0,
+            "candidate_f1": 1.0
+          },
+          {
+            "task_id": "demo-1",
+            "repeat": 1,
+            "parent_em": 0.0,
+            "candidate_em": 1.0,
+            "parent_f1": 0.0,
+            "candidate_f1": 1.0
+          },
+          {
+            "task_id": "demo-2",
+            "repeat": 1,
+            "parent_em": 0.0,
+            "candidate_em": 1.0,
+            "parent_f1": 0.0,
+            "candidate_f1": 1.0
+          },
+          {
+            "task_id": "demo-3",
+            "repeat": 1,
+            "parent_em": 0.0,
+            "candidate_em": 1.0,
+            "parent_f1": 0.0,
+            "candidate_f1": 1.0
+          }
+        ],
+        "parent_cost_cny": 0.004,
+        "candidate_cost_cny": 0.004,
+        "parent_api_calls": 0,
+        "candidate_api_calls": 0,
+        "cost_kind": "simulation_projection",
+        "cost_ratio": 1.0
+      },
+      "diff": "--- parent\n+++ candidate\n@@ -1,5 +1,5 @@\n {\n   \"components\": {\n-    \"final_answer.predict\": \"合成演示初始策略\"\n+    \"final_answer.predict\": \"合成演示可接受策略\"\n   }\n }"
+    },
+    {
+      "event": "原子接受",
+      "current": "version-570c4231f251405a9c97e4279254cad7",
+      "parent": "version-8ba7ea4dd3bb4b47841ce49e03ab7e17"
+    },
+    {
+      "event": "退化候选被拒绝，当前版本保留",
+      "reasons": [
+        "主指标EM增益不足",
+        "辅助指标F1退化超限",
+        "逐题回归率超限",
+        "配对区间不足以支持正增益"
+      ],
+      "metrics": {
+        "parent_em": 1.0,
+        "candidate_em": 0.0,
+        "delta_em": -1.0,
+        "delta_f1": -1.0,
+        "regression_rate": 1.0,
+        "regression_count": 4,
+        "interval": [
+          -1.0,
+          -1.0
+        ],
+        "per_task": [
+          {
+            "task_id": "demo-0",
+            "repeat": 1,
+            "parent_em": 1.0,
+            "candidate_em": 0.0,
+            "parent_f1": 1.0,
+            "candidate_f1": 0.0
+          },
+          {
+            "task_id": "demo-1",
+            "repeat": 1,
+            "parent_em": 1.0,
+            "candidate_em": 0.0,
+            "parent_f1": 1.0,
+            "candidate_f1": 0.0
+          },
+          {
+            "task_id": "demo-2",
+            "repeat": 1,
+            "parent_em": 1.0,
+            "candidate_em": 0.0,
+            "parent_f1": 1.0,
+            "candidate_f1": 0.0
+          },
+          {
+            "task_id": "demo-3",
+            "repeat": 1,
+            "parent_em": 1.0,
+            "candidate_em": 0.0,
+            "parent_f1": 1.0,
+            "candidate_f1": 0.0
+          }
+        ],
+        "parent_cost_cny": 0.004,
+        "candidate_cost_cny": 0.004,
+        "parent_api_calls": 0,
+        "candidate_api_calls": 0,
+        "cost_kind": "simulation_projection",
+        "cost_ratio": 1.0
+      }
+    },
+    {
+      "event": "重新打开持久状态",
+      "restored": true,
+      "candidates": 2
+    },
+    {
+      "event": "显式回滚至历史祖先",
+      "restored": true,
+      "current": "version-8ba7ea4dd3bb4b47841ce49e03ab7e17"
+    }
+  ],
+  "passed": true
+}

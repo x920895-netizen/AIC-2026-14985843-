@@ -1,0 +1,16 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "gepa": "0.1.4",
+    "dspy": "3.4.1",
+    "bm25s": "0.2.12",
+    "PyStemmer": "3.1.0",
+    "openai": "2.54.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pyarrow": "26.0.0"
+  },
+  "gepa_commit": "7af5f0c5c79fcc16b2d5248b187d0864683edd4d",
+  "artifact_commit": "cbefbc1aa0f43dd39874ec4bf42211365dbda42e"
+}

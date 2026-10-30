@@ -1,0 +1,82 @@
+{
+  "status": "completed",
+  "completed_at_utc": "2026-10-26T08:21:53.486351+00:00",
+  "smoke": {
+    "count": 8,
+    "em": 0.625,
+    "f1": 0.7083333333333334,
+    "hop1_support_recall": 0.875,
+    "hop2_support_recall": 0.875,
+    "all_support_retrieved": 0.75,
+    "seconds": 14.482250000000931
+  },
+  "baseline_val": {
+    "count": 30,
+    "em": 0.6333333333333333,
+    "f1": 0.7436363636363637,
+    "hop1_support_recall": 0.5833333333333334,
+    "hop2_support_recall": 0.7333333333333333,
+    "all_support_retrieved": 0.5,
+    "seconds": 14.865100000003197
+  },
+  "optimized_val": {
+    "count": 30,
+    "em": 0.7666666666666667,
+    "f1": 0.9258585858585859,
+    "hop1_support_recall": 0.5833333333333334,
+    "hop2_support_recall": 0.7666666666666667,
+    "all_support_retrieved": 0.5333333333333333,
+    "seconds": 24.80779999999795
+  },
+  "baseline_test": {
+    "count": 30,
+    "em": 0.6333333333333333,
+    "f1": 0.7022988505747126,
+    "hop1_support_recall": 0.55,
+    "hop2_support_recall": 0.6833333333333333,
+    "all_support_retrieved": 0.5333333333333333,
+    "seconds": 21.40836666666437
+  },
+  "optimized_test": {
+    "count": 30,
+    "em": 0.7666666666666667,
+    "f1": 0.8214814814814815,
+    "hop1_support_recall": 0.55,
+    "hop2_support_recall": 0.8333333333333334,
+    "all_support_retrieved": 0.7666666666666667,
+    "seconds": 29.05466666666713
+  },
+  "best_candidate_index": 8,
+  "num_candidates": 9,
+  "metric_calls": 462,
+  "cost_cny": 9.985033100000003,
+  "api_calls": 2526,
+  "prompt_tokens": 2368585,
+  "completion_tokens": 730085,
+  "phase_costs_cny": {
+    "calibration_2048_probe": 0.0006065,
+    "baseline_test": 0.1591197,
+    "calibration_2048_smoke": 0.03515,
+    "optimization": 9.43075,
+    "optimized_test": 0.2621799,
+    "probe": 0.0006092000000000001,
+    "calibration_2048_optimization": 0.0610744,
+    "smoke": 0.0355434
+  },
+  "regressions": [],
+  "improvements": [
+    "5a7a892a55429941d65f268d",
+    "5a733ac45542994cef4bc4e3",
+    "5ab455c755429942dd415f1b",
+    "5ac3965b554299741d48a2a6"
+  ],
+  "regression_rate_among_baseline_correct": 0.0,
+  "current_process_seconds": 842.375,
+  "limitations": [
+    "单次随机划分，每组独立测试仅30题",
+    "任务模型与论文Qwen3-8B不同",
+    "模型费用根据官方原价和API用量估算，实际账单可能受缓存与免费额度影响",
+    "任务模型采用非思考模式，四个DSPy模块仍生成reasoning字段",
+    "当前任务模型ID未提供固定快照映射"
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "phase": "3-B",
+  "mode": "offline_acceptance",
+  "completed_at_utc": "2026-10-27T14:45:43.409179+00:00",
+  "tests_run": 33,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true,
+  "seconds": 28.79700000002049,
+  "records": [
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_A_accept_creates_verified_version_and_preserves_parent",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.9380000000819564
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_B_bad_candidate_is_rejected_with_persistent_reason",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.7649999998975545
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_B_duplicate_proposal_is_not_retried",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.8280000002123415
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_B_freeze_scorer_dataset_and_configuration",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.29699999978765845
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_C_f1_and_cost_constraints_are_independent_vetoes",
+      "status": "passed",
+      "detail": null,
+      "seconds": 1.4530000002123415
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_C_regression_vetoes_partial_metric_improvement",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.8129999998491257
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_D_accept_transaction_rolls_back_at_each_failure_point",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.9690000000409782
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_D_atomic_artifact_write_failure_leaves_parent_usable",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.17100000008940697
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_D_evaluation_exception_and_missing_runs_cannot_accept",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.9220000000204891
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_D_rollback_failure_keeps_current_and_history",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.7969999997876585
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_D_runner_failure_is_persisted_and_vetoed",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.5780000002123415
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_E_conflicts_expiry_and_simulated_verification_are_explicit",
+      "status": "passed",
+      "detail": null,
+      "seconds": 1.1719999997876585
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_E_cross_process_restores_version_experience_and_rejections",
+      "status": "passed",
+      "detail": null,
+      "seconds": 2.7350000001024455
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_E_single_observation_lifecycle_and_real_evidence_boundary",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.46800000010989606
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_F_artifact_corruption_blocks_accept_and_restore",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.9379999998491257
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_F_version_hash_mismatch_is_not_silently_repaired",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.2029999999795109
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_G_all_four_targets_use_same_public_gate_and_publish_path",
+      "status": "passed",
+      "detail": null,
+      "seconds": 2.8590000001713634
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_G_pending_memory_cannot_be_published",
+      "status": "passed",
+      "detail": null,
+      "seconds": 1.0629999998491257
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_budget_candidate_total_cap_is_separate_from_scope_limit",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.7809999999590218
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_budget_scope_pending_and_post_validation_stop_veto_accept",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.8590000001713634
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_budget_stops_safely_and_simulation_never_claims_api_spending",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.6409999998286366
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_history_directories_are_not_allowed_as_state_root",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.1880000000819564
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_legacy_ledger_reader_is_explicit_read_only_and_scorer_unchanged",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.13999999989755452
+    },
+    {
+      "test_id": "test_harness_foundation.HarnessFoundationTests.test_stale_parent_is_rejected_across_store_instances",
+      "status": "passed",
+      "detail": null,
+      "seconds": 1.5
+    },
+    {
+      "test_id": "test_benchmark.BenchmarkTests.test_budget_blocks_before_sending",
+      "status": "passed",
+      "detail": null,
+      "seconds": 1.5780000002123415
+    },
+    {
+      "test_id": "test_benchmark.BenchmarkTests.test_calibration_usage_is_included_in_total_budget",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.015999999828636646
+    },
+    {
+      "test_id": "test_benchmark.BenchmarkTests.test_four_modules_and_official_feedback",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.10900000017136335
+    },
+    {
+      "test_id": "test_benchmark.BenchmarkTests.test_gepa_uses_official_reflector_and_accepts_candidate",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.031999999890103936
+    },
+    {
+      "test_id": "test_benchmark.BenchmarkTests.test_hotpot_f1_yes_no_and_partial_answers",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.0
+    },
+    {
+      "test_id": "test_benchmark.BenchmarkTests.test_rate_limit_waits_and_retries_only_a_bounded_number",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.06199999991804361
+    },
+    {
+      "test_id": "test_benchmark.BenchmarkTests.test_truncation_is_a_scored_failure_with_feedback",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.03100000019185245
+    },
+    {
+      "test_id": "test_round2.Round2Tests.test_evidence_reaches_final_module_only_when_enabled",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.09399999980814755
+    },
+    {
+      "test_id": "test_round2.Round2Tests.test_round2_budget_excludes_round1_but_includes_resume",
+      "status": "passed",
+      "detail": null,
+      "seconds": 0.125
+    }
+  ],
+  "blocked_network_attempts": 0,
+  "actual_model_api_calls": 0,
+  "actual_api_cost_cny": 0,
+  "note": "记录的是离线测试结果；模拟预算投影不构成API账单。"
+}

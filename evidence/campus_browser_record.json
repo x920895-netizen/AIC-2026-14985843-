@@ -1,0 +1,121 @@
+{
+  "schema": "campus-browser-record/1",
+  "application": {
+    "name": "CampusEvolve",
+    "version": "0.1.0",
+    "default_mode": "offline",
+    "real_enabled": false
+  },
+  "transport": {
+    "kind": "本机HTTP（FastAPI TestClient，绑定127.0.0.1）",
+    "session": "新建临时状态目录，重复调用会409"
+  },
+  "desensitized": true,
+  "note": "只保留接口路径、状态码、版本号与门禁结论；不含本机绝对路径、端口外地址、密钥或学生数据。",
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/evolution/run-demo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/evolution/state",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/chat",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/policies",
+      "status": 200
+    }
+  ],
+  "demo": {
+    "api_calls": 0,
+    "is_synthetic": true,
+    "mode": "offline",
+    "accepted_version": "version-3a5a8533b5e64d62a867baf6bd20c548",
+    "rollback_version": "version-70c1d864471a410ea444c43460da35f0",
+    "restart_restored": true,
+    "accepted_gate": {
+      "n": 12,
+      "parent_em": 0.9166666666666666,
+      "candidate_em": 1.0,
+      "parent_f1": 0.9722222222222222,
+      "candidate_f1": 1.0,
+      "fixes": 1,
+      "regressions": 0,
+      "regression_rate": 0.0,
+      "parent_citation_coverage": 1.0,
+      "candidate_citation_coverage": 1.0,
+      "api_calls": 0,
+      "passed": true,
+      "verdict": "eligible",
+      "reasons": [],
+      "gates": [
+        {
+          "name": "严格正确率增益",
+          "passed": true
+        },
+        {
+          "name": "事实F1下降限制",
+          "passed": true
+        },
+        {
+          "name": "原正确题回归限制",
+          "passed": true
+        }
+      ]
+    },
+    "rejected_gate": {
+      "passed": false,
+      "verdict": "rejected",
+      "n": 12,
+      "parent_em": 1.0,
+      "candidate_em": 0.16666666666666666,
+      "fixes": 0,
+      "regressions": 10,
+      "reasons": [
+        "严格正确率增益未通过",
+        "原正确题回归限制未通过",
+        "引用覆盖不下降未通过"
+      ]
+    }
+  },
+  "state_after_demo": {
+    "current_version": "version-70c1d864471a410ea444c43460da35f0",
+    "versions": 3,
+    "candidates": 2,
+    "evaluations": 2,
+    "decisions": 3,
+    "dataset_counts": {
+      "proposal": 12,
+      "validation": 12,
+      "holdout": 12
+    },
+    "real_enabled": false
+  },
+  "chat_probe": {
+    "mode": "offline",
+    "api_calls": 0,
+    "facts": [
+      {
+        "slot": "materials",
+        "citations": [
+          "CP04:第1条"
+        ]
+      }
+    ],
+    "escalate": false,
+    "policy_documents": 10
+  }
+}

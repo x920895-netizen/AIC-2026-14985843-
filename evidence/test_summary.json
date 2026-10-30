@@ -1,0 +1,143 @@
+{
+  "version": "1.2.0",
+  "generated_at": "2026-10-29T15:57:31.485916+00:00",
+  "command": "py -3 -m pytest tests/ -q",
+  "python": "3.12.4",
+  "total": 234,
+  "passed": 234,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "subtests_passed": 51,
+  "seconds": 234.77,
+  "by_file": {
+    "tests/test_bench_write.py": 3,
+    "tests/test_benchmark.py": 7,
+    "tests/test_cli.py": 7,
+    "tests/test_evidence.py": 13,
+    "tests/test_evolve_loop.py": 8,
+    "tests/test_gate_replay.py": 10,
+    "tests/test_gates.py": 11,
+    "tests/test_harness_foundation.py": 24,
+    "tests/test_online_runner.py": 11,
+    "tests/test_protocol.py": 20,
+    "tests/test_ratelimit.py": 20,
+    "tests/test_receipts.py": 8,
+    "tests/test_reflective_proposer.py": 11,
+    "tests/test_report.py": 4,
+    "tests/test_resume_idempotency.py": 11,
+    "tests/test_round2.py": 2,
+    "tests/test_scorer_equivalence.py": 2,
+    "tests/test_selection.py": 15,
+    "tests/test_stats.py": 36,
+    "tests/test_trace.py": 11
+  },
+  "environment": {
+    "gepa": "0.1.4（必须先安装 upstream/gepa；PyPI 同版本缺 best_score，会 32 passed / 1 failed）",
+    "dspy": "3.4.1（仅历史基准与等价性测试需要；harness 的 EM 为本地实现）",
+    "pytest": "pytest 9.1.1",
+    "network": "本地 mock 端点（127.0.0.1），无外部 API 调用；真实费用 0"
+  },
+  "previous_suite": {
+    "tests": 104,
+    "subtests": 41,
+    "version": "1.1.0",
+    "note": "104 项全部保留并通过，新增 130 项"
+  },
+  "added": {
+    "tests": 130,
+    "files": [
+      "tests/test_stats.py",
+      "tests/test_selection.py",
+      "tests/test_protocol.py",
+      "tests/test_trace.py",
+      "tests/test_ratelimit.py",
+      "tests/test_evidence.py",
+      "tests/test_resume_idempotency.py",
+      "tests/test_bench_write.py"
+    ],
+    "extended": [
+      "tests/test_cli.py（6 → 7，新增 stats/trace/protocol 往返）"
+    ]
+  },
+  "campus_example": {
+    "command": "py -3 -m pytest examples/campus_qa/tests -q",
+    "total": 34,
+    "passed": 34,
+    "subtests": 39,
+    "seconds": 56.84,
+    "note": "示例套件不计入主套件 234 项；v1.2 未改动该示例"
+  },
+  "other_entrypoints": {
+    "evolve_demo": {
+      "command": "py -3 examples/evolve_demo.py",
+      "scenario_a": {
+        "rounds": 3,
+        "accepted": 1,
+        "rejected": 1,
+        "receipts": 2,
+        "chain_verified": true,
+        "test_delta_em": 0.33333333333333337,
+        "cost_cny": 0.006,
+        "api_calls": 30
+      },
+      "scenario_b": {
+        "rounds": 5,
+        "accepted": 2,
+        "rejected": 3,
+        "receipts": 5,
+        "chain_verified": true,
+        "distinct_candidates": 5,
+        "effective_comparisons": 5,
+        "test_delta_em": 0.625,
+        "cost_cny": 0.0128,
+        "api_calls": 64
+      },
+      "family_wise_warning": "已比较 5 个候选（>3 个，有效比较 5 次），族错误率未校正：单次 α=0.05 下至少一次假阳性的上界约 0.25；建议按 Bonferroni 使用 α=0.0100，或改用独立 holdout 复验",
+      "seconds": 9.38,
+      "external_api": false
+    },
+    "demo": {
+      "command": "py -3 scripts/demo_submission.py --output <dir>",
+      "events": 6,
+      "passed": true,
+      "api_calls": 0,
+      "unchanged_since": "1.0.0"
+    },
+    "bench_write": {
+      "command": "py -3 examples/bench_write.py",
+      "records": 1000,
+      "journal_mode": "WAL",
+      "synchronous": "FULL",
+      "append": {
+        "elapsed_s": 22.937,
+        "throughput_per_s": 44,
+        "p50_ms": 22.205,
+        "p95_ms": 32.272
+      },
+      "concurrent_8": {
+        "elapsed_s": 6.108,
+        "throughput_per_s": 164,
+        "p50_ms": 10.143,
+        "p95_ms": 117.317
+      },
+      "read_during_write": {
+        "reads": 200,
+        "p50_ms": 14.211,
+        "p95_ms": 37.532,
+        "errors": 0
+      },
+      "total_elapsed_s": 32.646,
+      "platform": "Windows 10.0.26200（本机结果，不代表其他磁盘/OS）"
+    },
+    "gate_replay": {
+      "command": "py -3 examples/gate_replay.py --output <file>",
+      "exit_code": 0,
+      "r1_screen": "PASS",
+      "r1_release": "FAIL：候选推理成本比超限",
+      "r2_screen": "FAIL：主指标EM增益不足",
+      "r2_release": "FAIL：4 条理由",
+      "unchanged_since": "1.0.0"
+    }
+  }
+}

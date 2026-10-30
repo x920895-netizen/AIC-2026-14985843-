@@ -1,0 +1,19 @@
+{
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "task_model": "qwen3.8-flash",
+  "reflection_model": "qwen3.8-max-0902",
+  "task_prices_cny_per_million": [
+    0.8,
+    2.7
+  ],
+  "reflection_prices_cny_per_million": [
+    12.0,
+    36.0
+  ],
+  "prices_status": "历史配置，启用前需由账号持有人核对当前费率",
+  "max_tokens": 1800,
+  "timeout_seconds": 60,
+  "budget_cny": 2.0,
+  "max_calls": 80,
+  "base_url_note": "开源包只保留公开兼容地址；内部工作空间地址未分发。"
+}
