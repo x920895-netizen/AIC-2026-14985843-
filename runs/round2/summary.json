@@ -1,0 +1,94 @@
+{
+  "status": "completed",
+  "completed_at_utc": "2026-10-26T14:58:10.751502+00:00",
+  "metrics": {
+    "val_Baseline": {
+      "count": 30,
+      "em": 0.7,
+      "f1": 0.8103030303030303,
+      "hop1_support_recall": 0.5833333333333334,
+      "hop2_support_recall": 0.7166666666666667,
+      "all_support_retrieved": 0.4666666666666667,
+      "seconds": 20.397400000004563
+    },
+    "val_GEPA-R1": {
+      "count": 30,
+      "em": 0.6666666666666666,
+      "f1": 0.825858585858586,
+      "hop1_support_recall": 0.5833333333333334,
+      "hop2_support_recall": 0.75,
+      "all_support_retrieved": 0.5,
+      "seconds": 26.09796666667098
+    },
+    "val_GEPA-R2": {
+      "count": 30,
+      "em": 0.7,
+      "f1": 0.8591919191919193,
+      "hop1_support_recall": 0.5833333333333334,
+      "hop2_support_recall": 0.7833333333333333,
+      "all_support_retrieved": 0.5666666666666667,
+      "seconds": 24.242166666663252
+    },
+    "diagnostic_test_Baseline": {
+      "count": 30,
+      "em": 0.7,
+      "f1": 0.7711111111111111,
+      "hop1_support_recall": 0.55,
+      "hop2_support_recall": 0.6833333333333333,
+      "all_support_retrieved": 0.5333333333333333,
+      "seconds": 25.0020333333329
+    },
+    "diagnostic_test_GEPA-R1": {
+      "count": 30,
+      "em": 0.7333333333333333,
+      "f1": 0.7881481481481482,
+      "hop1_support_recall": 0.55,
+      "hop2_support_recall": 0.85,
+      "all_support_retrieved": 0.7666666666666667,
+      "seconds": 25.877066666663936
+    },
+    "diagnostic_test_GEPA-R2": {
+      "count": 30,
+      "em": 0.7666666666666667,
+      "f1": 0.8481481481481481,
+      "hop1_support_recall": 0.55,
+      "hop2_support_recall": 0.8333333333333334,
+      "all_support_retrieved": 0.7,
+      "seconds": 24.5073333333324
+    },
+    "fresh_test_Baseline": {
+      "count": 30,
+      "em": 0.6333333333333333,
+      "f1": 0.7677777777777778,
+      "hop1_support_recall": 0.6833333333333333,
+      "hop2_support_recall": 0.75,
+      "all_support_retrieved": 0.5333333333333333,
+      "seconds": 15.725499999988823
+    },
+    "fresh_test_GEPA-R1": {
+      "count": 30,
+      "em": 0.7666666666666667,
+      "f1": 0.8200000000000001,
+      "hop1_support_recall": 0.6833333333333333,
+      "hop2_support_recall": 0.8166666666666667,
+      "all_support_retrieved": 0.6666666666666666,
+      "seconds": 21.244866666663437
+    },
+    "fresh_test_GEPA-R2": {
+      "count": 30,
+      "em": 0.7,
+      "f1": 0.8090196078431372,
+      "hop1_support_recall": 0.6833333333333333,
+      "hop2_support_recall": 0.85,
+      "all_support_retrieved": 0.7333333333333333,
+      "seconds": 24.018866666662507
+    }
+  },
+  "cost_cny": 2.1888658000000003,
+  "api_calls": 1096,
+  "prompt_tokens": 1187993,
+  "completion_tokens": 375998,
+  "failures": 8,
+  "evaluations": 272,
+  "wall_seconds_this_process": 1879.795999999973
+}

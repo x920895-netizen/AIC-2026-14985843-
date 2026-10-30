@@ -1,0 +1,46 @@
+[
+  {
+    "id": "5ab6f7235542991d322236f3",
+    "reference": "Robert Douglas Benton",
+    "arms": {
+      "A": {
+        "completed": 5,
+        "correct": 0.0,
+        "mean_f1": 0.8,
+        "unique_answers": 1,
+        "reference_tokens_present": 0,
+        "extra_tokens_present": 0
+      },
+      "B": {
+        "completed": 5,
+        "correct": 0.0,
+        "mean_f1": 0.8,
+        "unique_answers": 1,
+        "reference_tokens_present": 0,
+        "extra_tokens_present": 0
+      }
+    }
+  },
+  {
+    "id": "5a7fab2f55429969796c1b19",
+    "reference": "No. 5",
+    "arms": {
+      "A": {
+        "completed": 5,
+        "correct": 2.0,
+        "mean_f1": 0.72,
+        "unique_answers": 3,
+        "reference_tokens_present": 4,
+        "extra_tokens_present": 3
+      },
+      "B": {
+        "completed": 5,
+        "correct": 2.0,
+        "mean_f1": 0.8,
+        "unique_answers": 3,
+        "reference_tokens_present": 4,
+        "extra_tokens_present": 3
+      }
+    }
+  }
+]

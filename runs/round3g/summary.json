@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "reason": null,
+  "calls": 30,
+  "completed": 30,
+  "errors": 0,
+  "cost_cny": 0.11689260000000001,
+  "prompt_tokens": 54525,
+  "completion_tokens": 27138,
+  "current_process_seconds": 230.65600000007544,
+  "completed_at_utc": "2026-10-27T07:45:45.421110+00:00"
+}

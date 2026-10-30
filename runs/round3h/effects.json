@@ -1,0 +1,20 @@
+{
+  "em": {
+    "delete_examples_rule_on": -0.29999999999999993,
+    "delete_examples_rule_off": 0.0,
+    "delete_rule_examples_on": -0.49999999999999994,
+    "delete_rule_examples_off": -0.2,
+    "average_delete_examples": -0.14999999999999997,
+    "average_delete_rule": -0.35,
+    "interaction": 0.29999999999999993
+  },
+  "mean_f1": {
+    "delete_examples_rule_on": -0.14,
+    "delete_examples_rule_off": 0.06666666666666676,
+    "delete_rule_examples_on": -0.18000000000000005,
+    "delete_rule_examples_off": 0.026666666666666727,
+    "average_delete_examples": -0.036666666666666625,
+    "average_delete_rule": -0.07666666666666666,
+    "interaction": 0.20666666666666678
+  }
+}

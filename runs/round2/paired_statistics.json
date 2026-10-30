@@ -1,0 +1,133 @@
+{
+  "val": {
+    "Baseline": {
+      "improvements": [
+        "5aba600a55429901930fa79e",
+        "5ae6949e5542996d980e7c18",
+        "5a7de2065542995f4f4022f2"
+      ],
+      "regressions": [
+        "5abcff6a5542993a06baf9ed",
+        "5a907ed15542995651fb516f"
+      ],
+      "delta_em": 0.03333333333333333,
+      "bootstrap_95": [
+        -0.1,
+        0.16666666666666666
+      ],
+      "mcnemar_exact_p": 1.0
+    },
+    "GEPA-R2": {
+      "improvements": [
+        "5a84b7915542997b5ce3ff29",
+        "5a7de2065542995f4f4022f2"
+      ],
+      "regressions": [
+        "5abcff6a5542993a06baf9ed"
+      ],
+      "delta_em": 0.03333333333333333,
+      "bootstrap_95": [
+        -0.06666666666666667,
+        0.16666666666666666
+      ],
+      "mcnemar_exact_p": 1.0
+    }
+  },
+  "diagnostic_test": {
+    "Baseline": {
+      "improvements": [
+        "5ab6286d55429953192ad281",
+        "5ac023975542997d642959c5"
+      ],
+      "regressions": [
+        "5a72a64f5542994cef4bc3b6",
+        "5ac2e8275542990b17b1549c",
+        "5ab2eb9d55429929539468ba"
+      ],
+      "delta_em": -0.03333333333333333,
+      "bootstrap_95": [
+        -0.16666666666666666,
+        0.1
+      ],
+      "mcnemar_exact_p": 1.0
+    },
+    "GEPA-R2": {
+      "improvements": [
+        "5ac023975542997d642959c5",
+        "5ac3965b554299741d48a2a6"
+      ],
+      "regressions": [
+        "5abc352055429959677d6a49"
+      ],
+      "delta_em": 0.03333333333333333,
+      "bootstrap_95": [
+        -0.06666666666666667,
+        0.13333333333333333
+      ],
+      "mcnemar_exact_p": 1.0
+    }
+  },
+  "fresh_test": {
+    "Baseline": {
+      "improvements": [],
+      "regressions": [
+        "5ae343415542992f92d82276",
+        "5a7fab2f55429969796c1b19",
+        "5ab6f7235542991d322236f3",
+        "5a7dfef15542997cc2c474ea"
+      ],
+      "delta_em": -0.13333333333333333,
+      "bootstrap_95": [
+        -0.26666666666666666,
+        -0.03333333333333333
+      ],
+      "mcnemar_exact_p": 0.125
+    },
+    "GEPA-R2": {
+      "improvements": [],
+      "regressions": [
+        "5a7fab2f55429969796c1b19",
+        "5ab6f7235542991d322236f3"
+      ],
+      "delta_em": -0.06666666666666667,
+      "bootstrap_95": [
+        -0.16666666666666666,
+        0.0
+      ],
+      "mcnemar_exact_p": 0.5
+    }
+  },
+  "round1_repeat_Baseline": {
+    "improvements": [
+      "5a7a892a55429941d65f268d",
+      "5a733ac45542994cef4bc4e3",
+      "5ab455c755429942dd415f1b"
+    ],
+    "regressions": [
+      "5ac2e8275542990b17b1549c"
+    ],
+    "delta_em": 0.06666666666666667,
+    "bootstrap_95": [
+      -0.06666666666666667,
+      0.2
+    ],
+    "mcnemar_exact_p": 0.625
+  },
+  "round1_repeat_GEPA-R1": {
+    "improvements": [
+      "5a72a64f5542994cef4bc3b6",
+      "5ab2eb9d55429929539468ba"
+    ],
+    "regressions": [
+      "5ab6286d55429953192ad281",
+      "5ac023975542997d642959c5",
+      "5ac3965b554299741d48a2a6"
+    ],
+    "delta_em": -0.03333333333333333,
+    "bootstrap_95": [
+      -0.16666666666666666,
+      0.1
+    ],
+    "mcnemar_exact_p": 1.0
+  }
+}

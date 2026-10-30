@@ -1,0 +1,112 @@
+{
+  "round": "3h",
+  "title": "正文/示例 2x2 析因（A/B/C/D 各 10 次）",
+  "desensitized": true,
+  "note": "仅保留各臂聚合计数、指标、诊断类别与成本；问题文本、检索正文、参考文本、原始回答及其分布已移除。",
+  "arms": {
+    "A": {
+      "completed": 10,
+      "correct": 7.0,
+      "em": 0.7,
+      "mean_f1": 0.9400000000000001,
+      "literal_equal": 7,
+      "world_form": 3,
+      "literal_world_form": 0,
+      "value_deviation": 0,
+      "uncertain": 0,
+      "category_counts": {
+        "数值相同、形式失配": 3,
+        "完全正确": 7
+      },
+      "calls": 10,
+      "cost_cny": 0.049671400000000004
+    },
+    "B": {
+      "completed": 10,
+      "correct": 4.0,
+      "em": 0.4,
+      "mean_f1": 0.8,
+      "literal_equal": 4,
+      "world_form": 5,
+      "literal_world_form": 2,
+      "value_deviation": 1,
+      "uncertain": 0,
+      "category_counts": {
+        "数值相同、形式失配": 5,
+        "完全正确": 4,
+        "答值偏离/未保留排名": 1
+      },
+      "calls": 10,
+      "cost_cny": 0.0426693
+    },
+    "C": {
+      "completed": 10,
+      "correct": 2.0,
+      "em": 0.2,
+      "mean_f1": 0.76,
+      "literal_equal": 2,
+      "world_form": 7,
+      "literal_world_form": 0,
+      "value_deviation": 1,
+      "uncertain": 0,
+      "category_counts": {
+        "数值相同、形式失配": 7,
+        "完全正确": 2,
+        "答值偏离/未保留排名": 1
+      },
+      "calls": 10,
+      "cost_cny": 0.047320600000000004
+    },
+    "D": {
+      "completed": 10,
+      "correct": 2.0,
+      "em": 0.2,
+      "mean_f1": 0.8266666666666668,
+      "literal_equal": 2,
+      "world_form": 7,
+      "literal_world_form": 3,
+      "value_deviation": 0,
+      "uncertain": 0,
+      "category_counts": {
+        "数值相同、形式失配": 8,
+        "完全正确": 2
+      },
+      "calls": 10,
+      "cost_cny": 0.0270102
+    }
+  },
+  "effects": {
+    "em": {
+      "delete_examples_rule_on": -0.29999999999999993,
+      "delete_examples_rule_off": 0.0,
+      "delete_rule_examples_on": -0.49999999999999994,
+      "delete_rule_examples_off": -0.2,
+      "average_delete_examples": -0.14999999999999997,
+      "average_delete_rule": -0.35,
+      "interaction": 0.29999999999999993
+    },
+    "mean_f1": {
+      "delete_examples_rule_on": -0.14,
+      "delete_examples_rule_off": 0.06666666666666676,
+      "delete_rule_examples_on": -0.18000000000000005,
+      "delete_rule_examples_off": 0.026666666666666727,
+      "average_delete_examples": -0.036666666666666625,
+      "average_delete_rule": -0.07666666666666666,
+      "interaction": 0.20666666666666678
+    }
+  },
+  "totals": {
+    "calls": 40,
+    "cost_cny": 0.1666715
+  },
+  "run": {
+    "calls": 40,
+    "completed": 40,
+    "errors": 0,
+    "seconds": 316.06199999991804,
+    "cost_cny": 0.1666715,
+    "prompt_tokens": 71500,
+    "completion_tokens": 40545,
+    "completed_at_utc": "2026-10-27T08:28:43.990410+00:00"
+  }
+}

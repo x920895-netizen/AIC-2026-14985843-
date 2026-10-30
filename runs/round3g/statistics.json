@@ -1,0 +1,151 @@
+{
+  "round": "3g",
+  "title": "条款消融：原指令 vs 删除第4条+示例",
+  "desensitized": true,
+  "note": "仅保留题序、正确计数、诊断类别与耗时/成本；问题文本、检索正文、参考文本与原始回答已移除。",
+  "arms": [
+    "A",
+    "B"
+  ],
+  "questions": [
+    {
+      "question_no": 1,
+      "role": "ranking",
+      "arms": {
+        "A": {
+          "completed": 10,
+          "correct": 3.0,
+          "mean_f1": 0.78,
+          "value_deviation": 1,
+          "uncertain": 0,
+          "category_counts": {
+            "数值相同、形式失配": 6,
+            "完全正确": 3,
+            "答值偏离/未保留排名": 1
+          }
+        },
+        "B": {
+          "completed": 10,
+          "correct": 6.0,
+          "mean_f1": 0.9199999999999999,
+          "value_deviation": 0,
+          "uncertain": 0,
+          "category_counts": {
+            "完全正确": 6,
+            "数值相同、形式失配": 4
+          }
+        }
+      },
+      "paired": {
+        "A_wins": 2,
+        "B_wins": 5,
+        "ties": 3,
+        "pairs": [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    {
+      "question_no": 2,
+      "role": "name_control",
+      "arms": {
+        "A": {
+          "completed": 5,
+          "correct": 0.0,
+          "mean_f1": 0.8,
+          "value_deviation": 0,
+          "uncertain": 0,
+          "category_counts": {
+            "姓名形式失配": 5
+          }
+        },
+        "B": {
+          "completed": 5,
+          "correct": 0.0,
+          "mean_f1": 0.8,
+          "value_deviation": 0,
+          "uncertain": 0,
+          "category_counts": {
+            "姓名形式失配": 5
+          }
+        }
+      },
+      "paired": {
+        "A_wins": 0,
+        "B_wins": 0,
+        "ties": 5,
+        "pairs": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    }
+  ],
+  "run": {
+    "calls": 30,
+    "completed": 30,
+    "errors": 0,
+    "seconds": 230.65600000007544,
+    "cost_cny": 0.11689260000000001,
+    "prompt_tokens": 54525,
+    "completion_tokens": 27138,
+    "completed_at_utc": "2026-10-27T07:45:45.421110+00:00"
+  }
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "5a7fab2f55429969796c1b19",
+    "reference": "No. 5",
+    "arms": {
+      "A": {
+        "correct": 3.0,
+        "mean_f1": 1.0,
+        "unique_answers": 1,
+        "unique_raw": 3,
+        "missing_count": 0,
+        "extra_count": 0
+      },
+      "B": {
+        "correct": 0.0,
+        "mean_f1": 0.8000000000000002,
+        "unique_answers": 1,
+        "unique_raw": 3,
+        "missing_count": 0,
+        "extra_count": 3
+      }
+    }
+  },
+  {
+    "id": "5ab6f7235542991d322236f3",
+    "reference": "Robert Douglas Benton",
+    "arms": {
+      "A": {
+        "correct": 0.0,
+        "mean_f1": 0.8000000000000002,
+        "unique_answers": 1,
+        "unique_raw": 3,
+        "missing_count": 3,
+        "extra_count": 0
+      },
+      "B": {
+        "correct": 0.0,
+        "mean_f1": 0.8000000000000002,
+        "unique_answers": 1,
+        "unique_raw": 3,
+        "missing_count": 3,
+        "extra_count": 0
+      }
+    }
+  },
+  {
+    "id": "5a7f65595542995d8a8dde58",
+    "reference": "Oswald Ernald Mosley",
+    "arms": {
+      "A": {
+        "correct": 0.0,
+        "mean_f1": 0.8000000000000002,
+        "unique_answers": 1,
+        "unique_raw": 3,
+        "missing_count": 3,
+        "extra_count": 0
+      },
+      "B": {
+        "correct": 0.0,
+        "mean_f1": 0.8000000000000002,
+        "unique_answers": 1,
+        "unique_raw": 3,
+        "missing_count": 3,
+        "extra_count": 0
+      }
+    }
+  },
+  {
+    "id": "5a74475955429979e28828cb",
+    "reference": "Jonathan Allen Lethem",
+    "arms": {
+      "A": {
+        "correct": 0.0,
+        "mean_f1": 0.8000000000000002,
+        "unique_answers": 1,
+        "unique_raw": 3,
+        "missing_count": 3,
+        "extra_count": 0
+      },
+      "B": {
+        "correct": 0.0,
+        "mean_f1": 0.8000000000000002,
+        "unique_answers": 1,
+        "unique_raw": 3,
+        "missing_count": 3,
+        "extra_count": 0
+      }
+    }
+  },
+  {
+    "id": "5ae77108554299572ea547b9",
+    "reference": "Declan Benedict McKenna",
+    "arms": {
+      "A": {
+        "correct": 0.0,
+        "mean_f1": 0.8000000000000002,
+        "unique_answers": 1,
+        "unique_raw": 3,
+        "missing_count": 3,
+        "extra_count": 0
+      },
+      "B": {
+        "correct": 0.0,
+        "mean_f1": 0.8000000000000002,
+        "unique_answers": 1,
+        "unique_raw": 3,
+        "missing_count": 3,
+        "extra_count": 0
+      }
+    }
+  }
+]
